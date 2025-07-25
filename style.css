@@ -1,1 +1,26 @@
+.header {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;   /* icon – flexible center – spacer */
+  align-items: center;
+  position: relative;
+  max-width: 100%;                        /* let it span the phone width */
+}
+
+.menu-btn {
+  grid-column: 1;
+  justify-self: start;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.title {
+  grid-column: 2;
+  text-align: center;
+  font-family: "Metal Mania", sans-serif;
+  font-size: 28px;
+  margin: 0;
+  user-select: none;                      /* avoid accidental highlight */
+}
 /* shared styles extracted into inline <style> */
